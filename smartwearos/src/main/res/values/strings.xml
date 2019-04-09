@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Cowabunga</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="cowabunga_confirm_error_message">Oops! An error has occurred.</string>
+    <string name="title_activity_failure">FailureActivity</string>
+    <string name="cowabunga_failure_message">Oops an error has occurred.</string>
+    <string name="ic_full_sad_icon">ic_full_sad_icon</string>
+    <string name="title_activity_success">SuccessActivity</string>
+    <string name="ic_round_check_white"/>
+    <string name="cowabunga_success_message">Success</string>
+    <string name="title_activity_confirmation">ConfirmationActivity</string>
+    <string name="cowabunga_confirmation_cancel_button">cowabunga_confirmation_cancel_button</string>
+    <string name="cowabunga_confirmation_confirm_button">cowabunga_confirmation_confirm_button</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="cowabunga_confirmation_message">Do you want to continue?</string>
+    <string name="title_activity_prompt">PromptActivity</string>
+    <string name="cowabunga_confirmation_title">Confirm</string>
+    <string name="cowabunga_prompt_message">Enter your value:</string>
+</resources>

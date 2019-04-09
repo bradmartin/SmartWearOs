@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wear.widget.BoxInsetLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ConfirmationActivity"
+        tools:deviceIds="wear"
+        android:padding="@dimen/box_inset_layout_padding">
+
+
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:boxedEdges="all">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title"
+                    android:fontFamily="@font/roboto"
+                    android:textStyle="bold"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/white"
+                    android:text="@string/cowabunga_confirmation_title"/>
+
+            <TextView
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="83dp"
+                    android:text="@string/hello_world"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/roboto"
+                    android:textAlignment="center"/>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_weight=".75"
+                    android:gravity="bottom"
+                    android:layout_height="0dp">
+
+                <ImageButton
+                        android:src="@drawable/ic_round_close_black"
+                        android:layout_height="48dp"
+                        android:id="@+id/cancelBtn"
+                        android:background="@drawable/accept_deny_dialog_negative_bg"
+                        android:layout_gravity="start"
+                        android:layout_width="48dp"
+                        android:contentDescription="@string/cowabunga_confirmation_cancel_button"
+                        />
+
+                <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                <ImageButton
+                        android:layout_height="48dp"
+                        android:id="@+id/confirmBtn"
+                        android:background="@drawable/accept_deny_dialog_positive_bg"
+                        android:src="@drawable/ic_round_check_white"
+                        android:layout_width="48dp"
+                        android:contentDescription="@string/cowabunga_confirmation_confirm_button"
+                        android:layout_gravity="end"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.wear.widget.BoxInsetLayout>
